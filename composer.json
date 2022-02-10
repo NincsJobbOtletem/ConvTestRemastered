@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src/"
+        }
+    },
+    "require": {
+        "php-di/php-di": "^6.0",
+        "twig/twig": "^3.0",
+        "nikic/fast-route": "^1.3"
+        
+    }
+}

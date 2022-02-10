@@ -1,0 +1,141 @@
+A database-t átalakitani factory patterné. 
+
+config átirás. pipa
+
+Szerződésell garantálni hogy több sql-l is optimalizált.
+mysql,pdo ,sqLite
+
+php interface <- Hasonló egy osztályhoz . Strukturát ad.
+
+--------
+
+iDatabase létrehozása,factory-k hogy működnek...
+configbolt paraméterezni hogy melyik adatbázist szeretném betölteni.
+
+-------------
+View-twig
+
+
+
+
+
+
+2021-12-16
+- dockerben installálni a git-et
+- legyen abstract Controller-ed pl AbstractController ez csinálja meg a twig renderelést. A metódus paraméteerként kapja meg a twig utvonalat és a megjelenítséhez szükésges params attribútumot.
+render(path: string, params: array){
+
+}
+------------------------------------------------------------------
+
+- factory osztályt megcsinálni
+DatabaseFactory
+- ő fog tudni a configról
+
+
+static function getObject(){
+    return new Database(paraméterek itt átadva)
+}
+
+--------------------------------------------------------------
+
+Model
+__constructor(Database $db){
+    this->db = db;
+}
+modelbe sima db bekérdezés dpendenci injection
+az adatbázist jól átadni!. dependenci adatbázis ijektálása
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+parent id ra hivatkozás
+megvizsgálni van e neki.
+3 foreach
+
+
+call al hivjam az indexbe
+Minden objectumokat callal hivjam/pédányositsam a classokat.
+
+--closure
+
+config.php példa itt legyen megcsinálva az adatbázis példány
+
+selectet is callal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Új project
+Boostrap
+config
+call al index.php
+config.php
+boostrap.php
